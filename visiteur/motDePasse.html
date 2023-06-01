@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mot de passe oublié</title>
+  <style>
+    *:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #e8e8e8;
+  font-size: 16px;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+    #box {
+          position: relative;
+          top: 150px;
+          margin-left: 350px;
+          width: 550px;
+          height: 400px;
+          background: #FFF;
+          border-radius: 2px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        input[type="text"],
+input[type="email"],
+input[type="password"]
+ {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.lef {
+  position: absolute;
+  top: 70px;
+  margin-left: 120px;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+}
+
+.inscriptio{
+  font-family:'Imprint MT Shadow';
+  top: 75px;
+  margin-top: -55px;
+  margin-left: 75px;
+  color: rgb(14, 14, 14);
+  position: absolute;
+  font-size: 30px;
+}
+
+img{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    pointer-events: none;
+}
+.btn {
+  margin-top: 10px;
+  width: 120px;
+  height: 32px;
+  margin-left: 50px;
+  background: #16a085;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+.btn:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+.btn:hover{
+    box-shadow: 1px 1px 10px #16a085;
+    transform: translateY(-5px);
+}
+  </style>
+
+ 
+</head>
+<body>
+  <img src="top.png" >
+
+  
+
+    <div id="box">
+      <h1 class="inscriptio"> Réinitialisation du mot de passe </h1> 
+        
+    
+
+         <div class="lef">
+          <form>
+              <label for="email">Adresse e-mail :</label>
+             <input type="email" id="email" name="email" required>
+    
+             <label for="code">Code de vérification :</label>
+             <input type="text" id="code" name="code" minlength="6" maxlength="6" required>
+    
+             <label for="password">Nouveau mot de passe :</label>
+             <input type="password" id="password" name="password" minlength="8" required>
+    
+            <button class="btn" type="submit" onclick="resetPassword()">Réinitialiser</button>
+          </form>
+        <p id="message"></p>
+      </div>
+      </div>
+      
+   
+
+
+
+  <script src="script.js">
+    function resetPassword() {
+  var email = document.getElementById('email').value;
+  var code = document.getElementById('code').value;
+  var password = document.getElementById('password').value;
+  var message = document.getElementById('message');
+
+  // Vérifier si l'adresse e-mail est valide (peut être ajouté du code supplémentaire ici)
+
+  // Envoyer la demande de réinitialisation de mot de passe au serveur (exemple simplifié)
+  simulateResetPasswordRequest(email, code, password, function(success) {
+    if (success) {
+      message.textContent = "Le mot de passe a été réinitialisé avec succès.";
+    } else {
+      message.textContent = "La réinitialisation du mot de passe a échoué. Veuillez vérifier vos informations et réessayer.";
+    }
+  });
+}
+
+
+
+  </script>
+</body>
+</html>
+

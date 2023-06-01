@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajoute Article</title>
+	<link rel="stylesheet"  href="AjouteArticle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+ 
+</head>
+
+<body>
+    
+  <header id="header">
+    <a href="AccueilVisite.html" class="logo"> <span>E</span>ventima</a>
+    <ul>
+        <li><a href="AccueilPartenaire.html" class="active" >Mon Profile</a></li>
+        <li><a href="Articles.html" >Mes Articles</a></li>
+        <li><a href="demande.html">Les Demandes</a></li>
+        <li><a href="Offre.html">Mes Offres</a></li>
+        <li><a href="#">Déconnecter</a></li>
+        <li><a href="a propos de ns.html"><i class="fa-solid fa-question"></i></a></li>
+        
+    </ul>
+ </header>
+
+
+
+<div>
+    <h1><b>Ajouter un Article</b></h1>
+<form action="ajouter_article.php" method="post">
+    <label for="nom">Nom de l'article:</label>
+    <input type="text" id="nom" name="nom"><br>
+
+    <label for="categorie">Catégorie:</label>
+  <select id="categorie" name="categorie">
+    <option value="vetements">Endrois</option>
+    <option value="vetements">Annimation</option>
+    <option value="chaussures">Décoration</option>
+    <option value="accessoires">Buffet</option>
+    <option value="vetements">Vêtements</option>
+    <option value="vetements">Bauté et coiffeur</option>
+    <option value="vetements">photographe</option>
+    <option value="vetements">Traiteur</option>
+  </select><br>
+
+  <label for="lieu">Lieu :</label>
+  <input type="text" id="lieu" name="lieu" >
+  
+  
+
+  
+    <label for="description">Description:</label>
+    <textarea id="description" name="description"></textarea><br>
+
+    <label for="capacité">Capacité:</label>
+    <input type="number" id="capacité" name="capacité"><br>
+    
+    <label for="prix">Prix:</label>
+    <input type="number" id="prix" name="prix"><br>
+
+    <label for="photo">Photo:</label>
+    <input type="file" id="photo" name="photo"><br><br>
+  
+    <input type="submit" value="Ajouter">
+  </form>
+
+
+
+</div>
+<!--footer-->
+<footer>
+  <br> <br>
+  <div class="pied-logo">Eventima</div>
+  <div class="pied-de-page">
+      
+      <a href="FAQ.html"><div class="np">
+          <div class="tl">FAQ</div>
+      </div></a>
+      <a href="Condition Generale.html"><div class="np">
+          <div class="tl">Condition géneral</div>
+      </div></a>
+      <a href="Equipe.html"><div class="np">
+          <div class="tl">L'équipe</div>
+      </div></a>
+  
+      
+      <a href="contacter nous pied.html"><div class="np">
+          <div class="tl">Contact</div>
+      </div></a>
+
+      
+  </div>
+  <div class="reseau">
+      <h3>
+          <a href="https://www.facebook.com/"><i1 class="fa-brands fa-square-facebook"></i1></a>
+          <a href="https://www.twitter.com/"><i1 class="fa-brands fa-square-twitter"></i1></a>
+          <a href="https://www.instagram.com/"><i1 class="fa-brands fa-instagram"></i1></a>
+      </h3>
+     
+  </div>
+  
+</footer>
+<!--fin footer-->
+
+</body>
+</html>
+  

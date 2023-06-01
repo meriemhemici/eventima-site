@@ -1,0 +1,736 @@
+:root{
+    --primary: #2d9fe1;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+#header {
+position: fixed;
+top: 0%;
+left: 0%;
+width: 100%;
+padding: 30px 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
+background-color: #fff;
+}
+#header .logo{
+    color: #000000;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+#header .logo span{
+    color: var(--primary);
+}
+#header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header ul li{
+    list-style: none;
+    margin-left: 20px;
+    font-size: 20px;
+}
+#header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: var(--primary);
+    border-radius: 20px;
+}
+#header ul li a:hover,
+#header ul li a.active {
+    background: var(--primary);
+    color: #fff;
+}
+i{
+    font-size: 20px;
+}
+
+
+
+
+
+
+p{
+    font-size: 12px;
+}
+.c{
+   
+    margin-left: 360px;
+    font-size: 30px;
+    font-family: Arial;
+    
+}
+h3{
+    margin-left: 220px;
+    font-size: 30px;
+}
+.c1{
+    border-radius: 50%;
+    background-color: #387da4;
+    height: 150px;
+    width: 150px;
+    margin-top: 15px;
+    margin-left: 250px;
+   
+}
+.c2{
+    border-radius: 50%;
+    background-color: #387da4;
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 190px;
+    content: "hi";
+    
+    
+    
+   
+}
+
+.cmarche{
+    margin-left: 80px;
+ 
+}
+
+
+
+.c3{
+    border-radius: 50%;
+    background-color: #387da4;
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 200px;
+   
+}
+.c4{
+    border-radius: 50%;
+    background-color: #387da4;
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 190px;
+   
+}
+.c5{
+    border-radius: 50%;
+    background-color: #387da4;
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 190px;
+   
+}
+.content{
+    position: absolute;
+    width: inherit;
+    height: auto;
+    top: 67%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    font-style: italic;
+
+}
+/*service*/
+.nos-service{
+    font-size: 35px;
+    font-family: Arial;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: -40px;
+}
+.serv{
+    width: 85%;
+    margin-left: 15%;
+    justify-content: center;
+    
+}
+.service{
+    font-size: 25px;
+    font-family: Arial;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: -50px;
+}
+.recherche{
+    font-size: 30px;
+    margin-left: 0px;
+}
+.photo-gallery{
+    margin-top: 20px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.pic{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic::before{
+    content: "Endroit";
+    position:absolute ;
+    top:50% ;
+    left: 85%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic:hover::after{
+    height: 100%;
+}
+.pic:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+.pic1{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic1::before{
+    content: "Annimation";
+    position:absolute ;
+    top:50% ;
+    left: 75%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic1:hover::after{
+    height: 100%;
+}
+.pic1:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+.pic2{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic2::before{
+    content: "Décoration";
+    position:absolute ;
+    top:50% ;
+    left: 80%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic2::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic2:hover::after{
+    height: 100%;
+}
+.pic2:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+.pic3{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic3::before{
+    content: "Buffet";
+    position:absolute ;
+    top:50% ;
+    left: 85%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic3::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic3:hover::after{
+    height: 100%;
+}
+.pic3:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+.pic4{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic4 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic4::before{
+    content: "vêtement";
+    position:absolute ;
+    top:50% ;
+    left: 85%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic4::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic4:hover::after{
+    height: 100%;
+}
+.pic4:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+.pic5{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic5 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic5::before{
+    content: "Beauté & coiffure";
+    position:absolute ;
+    top:50% ;
+    left: 70%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic5::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic5:hover::after{
+    height: 100%;
+}
+.pic5:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+.pic6{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic6 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic6::before{
+    content: "Photographe";
+    position:absolute ;
+    top:50% ;
+    left: 75%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic6::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic6:hover::after{
+    height: 100%;
+}
+.pic6:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+.pic7{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic7 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic7::before{
+    content: "Traiteur";
+    position:absolute ;
+    top:50% ;
+    left: 85%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic7::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic7:hover::after{
+    height: 100%;
+}
+.pic7:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+.pic8{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic8 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic8::before{
+    content: "DJ";
+    position:absolute ;
+    top:50% ;
+    left: 75%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic8::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic8:hover::after{
+    height: 100%;
+}
+.pic8:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+.pic9{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic9 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic9::before{
+    content: "chanteur";
+    position:absolute ;
+    top:50% ;
+    left: 75%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic9::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic9:hover::after{
+    height: 100%;
+}
+.pic9:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+.pic10{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic10 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic10::before{
+    content: "Autre";
+    position:absolute ;
+    top:50% ;
+    left: 75%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic10::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic10:hover::after{
+    height: 100%;
+}
+.pic10:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+#login-btn {
+    padding: 7px 20px;
+    background-color: #2d9fe1;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+   
+  }
+  

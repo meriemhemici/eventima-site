@@ -1,0 +1,455 @@
+<html>
+    <head>
+        <title> Eventima</title>
+        <meta charset="UTF-8">
+        <style>
+            :root{
+                --primary: #2d9fe1;
+            }
+            *{
+                margin: 0%;
+                padding: 0%;
+                box-sizing: border-box;
+                font-family: 'Poppins',sans-serif;
+            }
+            
+            #header {
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            padding: 30px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            background-color: #fff;
+            }
+            #header .logo{
+                color: #000000;
+                font-weight: 700;
+                font-size: 2em;
+                text-decoration: none;
+            }
+            #header .logo span{
+                color: var(--primary);
+            }
+            #header ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #header ul li{
+                list-style: none;
+                margin-left: 20px;
+                font-size: 20px;
+            }
+            #header ul li a{
+                text-decoration: none;
+                padding: 6px 15px;
+                color: var(--primary);
+                border-radius: 20px;
+            }
+            #header ul li a:hover,
+            #header ul li a.active {
+                background: var(--primary);
+                color: #fff;
+            }
+            i{
+                font-size: 20px;
+            }
+            
+            
+            
+            
+            /*footer*/
+            footer{
+                background-color: rgb(235, 242, 243);
+                margin:0 ;
+                margin-top: 40px;
+                width: 100%;
+                height: 300px;
+            
+            }
+            .pied-logo{
+                text-align: center;
+                color: var(--primary);
+                font-weight: 700;
+                font-size: 40px;
+                text-decoration: none;
+                
+            }
+            .pied-de-page{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top:32px;
+                align-content: space-between;
+            }
+            .np{
+                margin-right: 30px;
+                margin-left: 30px;
+                font-size: 20px;
+                margin-top: 15px;
+               
+            }
+            .reseau{
+                margin-top: 50px;
+                text-align: center;
+                font-size: 30px;
+            }
+            body {
+               
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+                line-height: 1.5;
+                margin: 0;
+                padding: 0;
+              }
+              
+              header {
+                background-color: #0055a5;
+                color: #ffffff;
+                padding: 20px;
+              }
+              
+              header h1 {
+                margin: 0;
+              }
+              
+              main {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+              }
+              
+              section {
+                margin-bottom: 30px;
+              }
+              
+              section h2 {
+                margin-top: 0;
+              }
+              
+              ul {
+                list-style: disc;
+                margin-left: 20px;
+              }
+              
+              .points {
+                font-size: 36px;
+                font-weight: bold;
+                margin-top: 0;
+                margin-bottom: 10px;
+              }
+              
+              
+            
+              
+              
+              .pr {
+                max-width: 400px;
+                margin: 0 auto;
+                padding: 20px;
+                text-align: center;
+                margin-top: 100px;
+              }
+              
+              h2 {
+                font-size: 24px;
+              }
+              
+              #points {
+                font-size: 36px;
+                font-weight: bold;
+                color: #2d9fe1;
+              }
+              
+              #redeem-btn {
+                background-color: #2d9fe1;
+                border: none;
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: bold;
+                padding: 10px 20px;
+                cursor: pointer;
+                border-radius: 5px;
+                margin-top: 20px;
+              }
+              #redeem-btn:hover {
+                background-color: #9baec2;
+            }
+            #redem-btn {
+                background-color: #2d9fe1;
+                border: none;
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: bold;
+                padding: 10px 20px;
+                cursor: pointer;
+                border-radius: 5px;
+                margin-top: 20px;
+              }
+              #redem-btn:hover {
+                background-color: #9baec2;
+            }
+            #redee-btn {
+                background-color: #2d9fe1;
+                border: none;
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: bold;
+                padding: 10px 20px;
+                cursor: pointer;
+                border-radius: 5px;
+                margin-top: 20px;
+              }
+              #redee-btn:hover {
+                background-color: #9baec2;
+            }
+              
+              #redeem-message {
+                margin-top: 20px;
+                font-weight: bold;
+              }
+              #redem-message {
+                margin-top: 20px;
+                font-weight: bold;
+              }
+              #redee-message {
+                margin-top: 20px;
+                font-weight: bold;
+              }
+              table {
+                border-collapse: collapse; 
+                width: 1590px;
+                margin-top: 110px;
+                margin-left: 40px;
+            }
+            th, td {
+                text-align: left;
+                padding: 8px;
+                border-bottom: 1px solid #ddd;
+               
+            }
+            tr:hover {background-color:#f5f5f5;}   
+            .accept-btn, .reject-btn {
+                padding: 6px 12px;
+                font-size: 14px;
+                border-radius: 4px;
+                border: none;
+                color: #fff;
+                cursor: pointer;
+            }
+            .accept-btn {
+                background-color: #2d9fe1;
+                width: 130px;
+                height: 33px;
+                font-size: 18px;
+            }
+            .accept-btn:hover {
+                background-color: #9baec2;
+            }
+            .reject-btn {
+                background-color: #5a6971;
+                width: 130px;
+                height: 33px;
+                font-size: 18px;
+               
+            }
+            .reject-btn:hover {
+                background-color: #9baec2;
+            }
+            .demandes {
+                color: #2d9fe1;
+                 margin-left: 500px;
+                 text-decoration: underline;
+            
+            }
+            .element {
+                background-color: #e4f8f7;
+                color: #000;
+                padding: 10px;
+                cursor: pointer;
+              }
+              
+              .content {
+                display: none;
+                background-color: #fff;
+                color: #000;
+                padding: 10px;
+              }
+              
+              
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
+    </head>
+    <body>
+         <!--header-->
+         <header id="header">
+
+
+            <a href="AccueilVisite.html" class="logo"> <span>E</span>ventima</a>
+            <ul>
+                <li><a href="AccueilC.php"  >Nos service</a></li>
+                <li><a href="offreC.php">Offre</a></li>
+                <li><a href="fedelitee.html">Fidélité</a></li>
+                <li><a href="a propos de ns.html">A propos nous</a></li>
+                <li><a href="contacter nous pied.html">Contactez-nous</a></li>
+                <li><a href="FAQ.html"><i class="fa-solid fa-question"></i></a></li>
+                
+                <li><a href="panier.php"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </header>
+
+ 
+        <div class="loyalty-program">
+            <div class="pr">
+              <h2>Programme de fidélité</h2>
+              <p>Vous avez accumulé <span id="points">500</span> points.</p>
+             </div>
+        
+
+
+        <table>
+            
+            <tr>
+                
+                <td><h3>Remise 10% sur votre commande</h3><br> Si vous choisissez d'échange vos point contre ce cadeau, un remise de 10% sera éffectuée sur votre commande. </td>
+                <td>
+                    <button id="redeem-btn">Échanger     100 pts</button>
+            <p id="redeem-message"></p>
+                </td>
+            </tr>
+            <tr>
+                
+                <td><h3>Remise 20% sur votre commande</h3><br> Si vous choisissez d'échange vos point contre ce cadeau, un remise de 20% sera éffectuée sur votre commande. </td>
+                <td>
+                    <button id="redem-btn">Échanger     200 pts</button>
+            <p id="redem-message"></p>
+                </td>
+            </tr>
+            <tr>
+                
+                <td><h3>Bon d'achat 10000 DA</h3><br> Si vous choisissez d'échange vos point contre ce cadeau, un bon d'achat de 10000 DA sera ajouter a votre compte. </td>
+                <td>
+                    <button id="redee-btn">Échanger     700 pts</button>
+            <p id="redee-message"></p>
+                </td>
+               
+        </table>
+    </div>
+        
+            
+        
+
+
+
+    
+  
+ <br>
+    <div class="element" onclick="toggleContent()">
+       <h2> > Comment puis je gagner des points </h2>
+        <div class="content">
+          Les sont ajoutés automatiquement à votre compte à chaque fois que vous accomplirez des actions sur le site Eventima (Abonnement Facebook, Abonnement Instagram, ... ect) et vous etes récompensés par un nombre spécifique de point en fonction du montant de vos commandes.
+        </div>
+        
+      </div>
+
+
+
+
+        <!--footer-->
+        <footer>
+            <br> <br>
+            <div class="pied-logo">Eventima</div>
+            <div class="pied-de-page">
+                
+                <a href="FAQ.html"><div class="np">
+                    <div class="tl">FAQ</div>
+                </div></a>
+                <a href="Condition Generale.html"><div class="np">
+                    <div class="tl">Condition géneral</div>
+                </div></a>
+                <a href="Equipe.html"><div class="np">
+                    <div class="tl">L'équipe</div>
+                </div></a>
+            
+                
+                <a href="contacter nous pied.html"><div class="np">
+                    <div class="tl">Contact</div>
+                </div></a>
+
+                
+            </div>
+            <div class="reseau">
+                <h3>
+                    <a href="https://www.facebook.com/"><i1 class="fa-brands fa-square-facebook"></i1></a>
+                    <a href="https://www.twitter.com/"><i1 class="fa-brands fa-square-twitter"></i1></a>
+                    <a href="https://www.instagram.com/"><i1 class="fa-brands fa-instagram"></i1></a>
+                </h3>
+               
+            </div>
+            
+        </footer>
+        <!--fin de footer-->
+       
+        <script>
+            // Récupérer le solde de points depuis le serveur (exemple : 500 points)
+let points = 500;
+
+// Afficher le solde de points sur la page
+let pointsElement = document.getElementById("points");
+pointsElement.textContent = points;
+
+// Écouter l'événement clic sur le bouton "Échanger mes points"
+let redeemButton = document.getElementById("redeem-btn");
+redeemButton.addEventListener("click", function() {
+  if (points >= 100 ) {
+    let discount = (points - 100) ;
+    points = discount ;
+    pointsElement.textContent = points;
+    document.getElementById("redeem-message").textContent = "Vous avez échangé  10% de remise.";
+  } else {
+    document.getElementById("redeem-message").textContent = "Vous n'avez pas assez de points pour échanger.";
+  }
+});
+
+// Écouter l'événement clic sur le bouton "Échanger mes points"
+let redemButton = document.getElementById("redem-btn");
+redemButton.addEventListener("click", function() {
+  if (points >= 200 ) {
+    let discount = (points - 200) ;
+    points = discount ;
+    pointsElement.textContent = points;
+    document.getElementById("redem-message").textContent = "Vous avez échangé  20% de remise.";
+  } else {
+    document.getElementById("redem-message").textContent = "Vous n'avez pas assez de points pour échanger.";
+  }
+});
+
+// Écouter l'événement clic sur le bouton "Échanger mes points"
+let redeeButton = document.getElementById("redee-btn");
+redeeButton.addEventListener("click", function() {
+  if (points >= 700 ) {
+    let discount = (points - 700) ;
+    points = discount ;
+    pointsElement.textContent = points;
+    document.getElementById("redee-message").textContent = "Vous avez échangé  bon d'achat 10000 da.";
+  } else {
+    document.getElementById("redee-message").textContent = "Vous n'avez pas assez de points pour échanger.";
+  }
+});
+function toggleContent() {
+  let content = document.querySelector(".content");
+  if (content.style.display === "none") {
+    content.style.display = "block";
+  } else {
+    content.style.display = "none";
+  }
+}
+
+
+        </script>
+    </body>
+</html>

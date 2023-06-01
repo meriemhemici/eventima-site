@@ -1,0 +1,33 @@
+.Femme{
+width: 300px;
+height: 200px;
+border : none;
+
+}
+
+.Homme{
+    width: 300px;
+    height: 200px; 
+}
+
+body {
+    background-color:white;
+    font-family:'Courier New', Courier, monospace;
+  }
+
+  .equipe{
+
+    color: rgb(240, 141, 61);
+    font-size: 35px;
+    text-align: center;
+    text-decoration: underline;
+  }
+ .me {
+
+margin-left: 600px;
+
+ }
+ .nom{
+    text-indent: 50px;
+
+ }

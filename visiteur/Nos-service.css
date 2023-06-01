@@ -1,0 +1,1176 @@
+
+:root{
+    --primary: #2d9fe1;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+#header {
+position: fixed;
+top: 0%;
+left: 0%;
+width: 100%;
+padding: 30px 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
+background-color: #fff;
+}
+#header .logo{
+    color: #000000;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+#header .logo span{
+    color: var(--primary);
+}
+#header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header ul li{
+    list-style: none;
+    margin-left: 20px;
+    font-size: 20px;
+}
+#header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: var(--primary);
+    border-radius: 20px;
+}
+#header ul li a:hover,
+#header ul li a.active {
+    background: var(--primary);
+    color: #fff;
+}
+i{
+    font-size: 20px;
+}
+.title{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+
+}
+/*imgtop*/
+.imgtop{
+    background-image: url('image2.png');
+    background-size: cover;
+}
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    position: relative;
+    left: 10%;
+    transform: translate(0%, -50%);
+    z-index: 1;
+}
+.search input[type="text"] {
+    width: 300px;
+    padding: 25px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+ 
+  }
+  
+ .search button[type="submit"] {
+    padding: 20px;
+    background-color: #16e0ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+.search  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    top: -500;
+}
+* {
+    text-decoration: none !important;
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+    scrollbar-width: thin;
+    scrollbar-color: #888888 #F1F1F1;
+}
+
+/*service*/
+.nos-service{
+    font-size: 30px;
+    font-family: Arial;
+    text-align: center;
+    margin-top: 70px;
+}
+.service{
+    font-size: 25px;
+    font-family: Arial;
+    text-align: center;
+    margin-top: 20px;
+}
+.main{
+    margin-left: 60px;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.cadrs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    
+
+}
+.cadrs .cadr{
+    margin-right: 80px;
+    cursor: pointer;
+    margin-left: 80px;
+    margin-top: 25px;
+    justify-content: center;
+    text-align: center;
+    
+    
+
+}
+.cadrs .cadr img{
+    width: 300px;
+    height: 300px;
+    
+    
+
+}
+.cadrs .cadr video{
+    width: 250px;
+    height: 250px;
+    
+
+}
+.cadrs .cadr .cadr-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: none;
+    
+    
+}
+.cadrs .cadr .cadr-body p{
+    margin-top: -10px;
+    width: 250px;
+}
+.title-c{
+    text-align: center;
+    font-size: 26px;
+    color: #387da4;
+    margin-top: 10px;
+    text-decoration: none;
+    
+}
+
+
+
+
+.photo-gallery{
+    margin-top: 20px;
+    width: 90%;
+    margin-left: 250px;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-gap: 50px;
+}
+.photo-gallery1{
+    margin-top: 20px;
+    width: 90%;
+    margin-left: 450px;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-gap: 50px;
+}
+
+.pic8{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic8 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic8::before{
+    content: "DJ";
+    position:absolute ;
+    top:50% ;
+    left: 90%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic8::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic8:hover::after{
+    height: 100%;
+}
+.pic8:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+.pic9{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic9 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic9::before{
+    content: "chanteur";
+    position:absolute ;
+    top:50% ;
+    left: 80%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic9::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic9:hover::after{
+    height: 100%;
+}
+.pic9:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+.pict3{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pict3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pict3::before{
+    content: "Maquilleuse";
+    position:absolute ;
+    top:50% ;
+    left: 80%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pict3::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pict3:hover::after{
+    height: 100%;
+}
+.pict3:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+.pict4{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pict4 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pict4::before{
+    content: "Coiffeur";
+    position:absolute ;
+    top:50% ;
+    left: 80%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pict4::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pict4:hover::after{
+    height: 100%;
+}
+.pict4:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+.pict5{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pict5 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pict5::before{
+    content: "Coiffeuse";
+    position:absolute ;
+    top:50% ;
+    left: 80%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pict5::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pict5:hover::after{
+    height: 100%;
+}
+.pict5:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+
+.pic{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic::before{
+    content: "Hotel";
+    position:absolute ;
+    top:50% ;
+    left: 85%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic:hover::after{
+    height: 100%;
+}
+.pic:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+
+
+.pic1{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic1::before{
+    content: "Villa";
+    position:absolute ;
+    top:50% ;
+    left: 85%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic1:hover::after{
+    height: 100%;
+}
+.pic1:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+.pic2{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic2::before{
+    content: "Salle des fetes";
+    position:absolute ;
+    top:50% ;
+    left: 70%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic2::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic2:hover::after{
+    height: 100%;
+}
+.pic2:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+.pic3{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic3::before{
+    content: "Slon the thé";
+    position:absolute ;
+    top:50% ;
+    left: 75%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic3::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic3:hover::after{
+    height: 100%;
+}
+.pic3:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+
+.pic4{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic4 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic4::before{
+    content: "Restaurant";
+    position:absolute ;
+    top:50% ;
+    left: 75%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic4::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic4:hover::after{
+    height: 100%;
+}
+.pic4:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+.pic5{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic5 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic5::before{
+    content: "Salé";
+    position:absolute ;
+    top:50% ;
+    left: 85%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic5::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic5:hover::after{
+    height: 100%;
+}
+.pic5:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+.pict1{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pict1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pict1::before{
+    content: "traditionnel";
+    position:absolute ;
+    top:50% ;
+    left: 85%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pict1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pict1:hover::after{
+    height: 100%;
+}
+.pict1:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+.pict2{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pict2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pict2::before{
+    content: "Moderne";
+    position:absolute ;
+    top:50% ;
+    left: 85%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pict2::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pict2:hover::after{
+    height: 100%;
+}
+.pict2:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+
+
+
+.pic6{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic6 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic6::before{
+    content: "Sucré";
+    position:absolute ;
+    top:50% ;
+    left: 85%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic6::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic6:hover::after{
+    height: 100%;
+}
+.pic6:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+.pic7{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic7 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic7::before{
+    content: "Tarte";
+    position:absolute ;
+    top:50% ;
+    left: 85%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic7::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic7:hover::after{
+    height: 100%;
+}
+.pic7:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+
+
+.pic10{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic10 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic10::before{
+    content: "Autre";
+    position:absolute ;
+    top:50% ;
+    left: 85%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic10::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic10:hover::after{
+    height: 100%;
+}
+.pic10:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+.pic11{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic11 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic11::before{
+    content: "Homme";
+    position:absolute ;
+    top:50% ;
+    left: 85%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic11::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic11:hover::after{
+    height: 100%;
+}
+.pic11:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+.pic12{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic12 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic12::before{
+    content: "Femme";
+    position:absolute ;
+    top:50% ;
+    left: 85%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic12::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic12:hover::after{
+    height: 100%;
+}
+.pic12:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+.pic13{
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px lightgray;
+    position: relative;
+    cursor: pointer;
+}
+.pic13 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.pic13::before{
+    content: "Enfant";
+    position:absolute ;
+    top:50% ;
+    left: 85%;
+    transform:translate(-50%,-50%) ;
+    color:white ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0 ;
+    transition: .3s ;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.pic13::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+    left:0 ;
+    border: radius 10px; ;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic13:hover::after{
+    height: 100%;
+}
+.pic13:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+#login-btn {
+    padding: 7px 20px;
+    background-color: #2d9fe1;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+   
+  }
+  
+
+  

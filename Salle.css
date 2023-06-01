@@ -1,0 +1,77 @@
+/*content*/
+.title{
+    text-align: center;
+    font-size: 50px;
+    margin-top: -65px;
+    background-color: white;
+    position: absolute;
+    margin-left: 45%;
+
+}
+
+
+.main-content{
+    width: 100%;
+    float: left;
+    margin-top: 100px;
+    background-color: white;
+
+    
+}
+
+ .main-content .recent-post-title{
+    
+    text-align: center;
+
+}
+.main-content .post{
+    width: 95%;
+    height: 270px;
+    margin: 20px auto;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+}
+.main-content .post .post-image{
+    width: 35%;
+    height: 100%;
+    float: left;
+    margin-left: 10%;
+}
+.main-content .post .post-preview{
+    padding: 15px;
+    width: 55%;
+    float: left;
+    
+
+}
+.main-content .post .post-preview i{
+    font-size: 15px;
+}
+.btn{
+    padding: .5rem 1rem;
+    background-color: aquamarine;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.btn:hover{
+    background-color: aquamarine;
+    color: white !important;
+}
+.main-content .post .read{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid #005200;
+    background: transparent;
+    border-radius: 0px;
+    color: #005200;
+}
+ .main-content .post .read:hover{
+    background: #005200;
+    color: white;
+    transition: .25s;
+}
+
+

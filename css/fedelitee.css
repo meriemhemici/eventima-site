@@ -1,0 +1,278 @@
+:root{
+    --primary: #2d9fe1;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+#header {
+position: fixed;
+top: 0%;
+left: 0%;
+width: 100%;
+padding: 30px 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
+background-color: #fff;
+}
+#header .logo{
+    color: #000000;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+#header .logo span{
+    color: var(--primary);
+}
+#header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header ul li{
+    list-style: none;
+    margin-left: 20px;
+    font-size: 20px;
+}
+#header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: var(--primary);
+    border-radius: 20px;
+}
+#header ul li a:hover,
+#header ul li a.active {
+    background: var(--primary);
+    color: #fff;
+}
+i{
+    font-size: 20px;
+}
+
+
+
+
+/*footer*/
+footer{
+    background-color: rgb(235, 242, 243);
+    margin:0 ;
+    margin-top: 40px;
+    width: 100%;
+    height: 300px;
+
+}
+.pied-logo{
+    text-align: center;
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 40px;
+    text-decoration: none;
+    
+}
+.pied-de-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:32px;
+    align-content: space-between;
+}
+.np{
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+    margin-top: 15px;
+   
+}
+.reseau{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+body {
+   
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #0055a5;
+    color: #ffffff;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  section h2 {
+    margin-top: 0;
+  }
+  
+  ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .points {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  
+
+  
+  
+  .pr {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  #points {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2d9fe1;
+  }
+  
+  #redeem-btn {
+    background-color: #2d9fe1;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  #redeem-btn:hover {
+    background-color: #9baec2;
+}
+#redem-btn {
+    background-color: #2d9fe1;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  #redem-btn:hover {
+    background-color: #9baec2;
+}
+#redee-btn {
+    background-color: #2d9fe1;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  #redee-btn:hover {
+    background-color: #9baec2;
+}
+  
+  #redeem-message {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  #redem-message {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  #redee-message {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  table {
+    border-collapse: collapse; 
+    width: 1590px;
+    margin-top: 110px;
+    margin-left: 40px;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+   
+}
+tr:hover {background-color:#f5f5f5;}   
+.accept-btn, .reject-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.accept-btn {
+    background-color: #2d9fe1;
+    width: 130px;
+    height: 33px;
+    font-size: 18px;
+}
+.accept-btn:hover {
+    background-color: #9baec2;
+}
+.reject-btn {
+    background-color: #5a6971;
+    width: 130px;
+    height: 33px;
+    font-size: 18px;
+   
+}
+.reject-btn:hover {
+    background-color: #9baec2;
+}
+.demandes {
+    color: #2d9fe1;
+     margin-left: 500px;
+     text-decoration: underline;
+
+}
+.element {
+    background-color: #e4f8f7;
+    color: #000;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .content {
+    display: none;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+  }
+  
+  

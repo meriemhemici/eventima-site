@@ -1,0 +1,151 @@
+<?php 
+include("connect.php");
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Les Demandes</title>
+	<link rel="stylesheet" type="text/css" href="demande.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
+
+</head>
+<body style="overflow-y: auto;">
+    <!--header-->
+       
+    <header id="header">
+        <a href="AccueilPartenaire.html" class="logo"> <span>E</span>ventima</a>
+        <ul>
+            <li><a href="AccueilPartenaire.html" >Mon Profile</a></li>
+            <li><a href="Articles.php" >Mes Articles</a></li>
+            <li><a href="demande.php" class="active">Les Demandes</a></li>
+            <li><a href="Offre.php" >Mes Offres</a></li>
+            <li><a href="logout.php">Déconnecter</a></li>
+            <li><a href="a propos de ns.html"><i class="fa-solid fa-question"></i></a></li>
+            
+        </ul>
+     </header>
+     <table>
+        <tr>
+          <th>Nom</th>
+          <th>Date</th>
+          <th>Heure de début</th>
+          <th>Heure de fin</th>
+          <th>Nombre de personnes</th>
+          <th>Action</th>
+        </tr>
+        <?php foreach ($reservations as $reservation) { ?>
+        <tr>
+          <td><?php echo $reservation['nom']; ?></td>
+          <td><?php echo $reservation['date']; ?></td>
+          <td><?php echo $reservation['heureD']; ?></td>
+          <td><?php echo $reservation['heureF']; ?></td>
+          <td><?php echo $reservation['nombrePers']; ?></td>
+          <td>
+            <button class="accept-btn"data-id="<?php echo $reservation['id']; ?>">Accepter</button>
+            <button class="reject-btn"data-id="<?php echo $reservation['id']; ?>">Réfuser</button>
+          </td>
+        </tr>
+        <?php } ?>
+      </table>
+      
+     <table>
+         <tr>
+             <th>Nom </th>
+             <th>Date</th>
+             <th>Heure de début</th>
+             <th>Heure de fin</th>
+             <th>Nombre de personnes </th>
+             <th>Action</th>
+         </tr>
+         <tr>
+             <td>Soumia jr</td>
+             <td>10/05/2023</td>
+             <td>14:00</td>
+             <td>16:00</td>
+             <td>80 personnes </td>
+             <td>
+                 <button class="accept-btn">Accepter</button>
+                 <button class="reject-btn">Refuser</button>
+             </td>
+         </tr>
+         <tr>
+             <td>Mohamed kh </td>
+             <td>12/05/2023</td>
+             <td>10:00</td>
+             <td>12:00</td>
+             <td>60 personnes </td>
+             <td>
+                 <button class="accept-btn">Accepter</button>
+                 <button class="reject-btn">Refuser</button>
+             </td>
+         </tr>
+         <tr>
+             <td>Lina sn </td>
+             <td>15/05/2023</td>
+             <td>16:00</td>
+             <td>18:00</td>
+             <td>200 personnes </td>
+             <td>
+                 <button class="accept-btn">Accepter</button>
+                 <button class="reject-btn">Refuser</button>
+           </td>
+             <tr>
+                 <td> Linda gh </td>
+                 <td>12/06/2023</td>
+                 <td>11:00</td>
+                 <td>12:00</td>
+                 <td>98 personnes </td>
+                 <td>
+                     <button class="accept-btn">Accepter</button>
+                     <button class="reject-btn">Refuser</button>
+                 </td>
+                 <tr>
+                  <td> Oussama bn </td>
+                     <td>30/08/2023</td>
+                     <td>10:00</td>
+                     <td>12:00</td>
+                     <td>55 personnes </td>
+                     <td>
+                         <button class="accept-btn">Accepter</button>
+                         <button class="reject-btn">Refuser</button>
+                     </td>
+         </tr>
+     </table>
+
+
+       <!--footer-->
+    <footer>
+        <br> <br>
+        <div class="pied-logo">Eventima</div>
+        <div class="pied-de-page">
+            
+            <a href="FAQ.html"><div class="np">
+                <div class="tl">FAQ</div>
+            </div></a>
+            <a href="Condition Generale.html"><div class="np">
+                <div class="tl">Condition géneral</div>
+            </div></a>
+            <a href="Equipe.html"><div class="np">
+                <div class="tl">L'équipe</div>
+            </div></a>
+        
+            
+            <a href="contacter nous pied.html"><div class="np">
+                <div class="tl">Contact</div>
+            </div></a>
+
+            
+        </div>
+        <div class="reseau">
+            <h3>
+                <a href="https://www.facebook.com/"><i1 class="fa-brands fa-square-facebook"></i1></a>
+                <a href="https://www.twitter.com/"><i1 class="fa-brands fa-square-twitter"></i1></a>
+                <a href="https://www.instagram.com/"><i1 class="fa-brands fa-instagram"></i1></a>
+            </h3>
+           
+        </div>
+        
+    </footer>
+<!--fin footer-->
+</body>
+</html>

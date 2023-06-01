@@ -1,0 +1,80 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    overflow: hidden;
+    background: #fff;
+    min-height: 100vh;
+}
+.background{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    pointer-events: none; 
+}
+.Eventima{
+    font-family:'kenao Sans Serif';
+    margin-top: 150px;
+    margin-left: 320px;
+    color: #FFBFBF;
+    position: absolute;
+    font-size: 60px;
+}
+.text1{
+    font-family:'Imprint MT Shadow';
+    margin-top: 300px;
+    margin-left: 150px;
+    color: black;
+    position: absolute;
+    font-size: 30px;
+}
+.text2{
+    font-family:'Arial (Corps CS)';
+    margin-top: 500px;
+    margin-left: 280px;
+    color: black;
+    position: absolute;
+    font-size: 25px;
+    
+}
+.btn{
+    color: black;
+    background-color: #FFBFBF;
+    border: none;
+    padding: 25px 100px;
+    
+    top: 600px;
+    left: 1100px;
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+}
+button{
+    color: black;
+    background-color: #FFBFBF;
+    text-decoration: black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family:'Arial Black';
+}
+.text5{
+    font-family:'Arial (Corps CS)';
+    margin-top: 685px;
+    margin-left: 1200px;
+    color: #FFBFBF;
+    position: absolute;
+    font-size: 20px;
+    text-decoration:underline;
+    
+}

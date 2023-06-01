@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mon profile</title>
+	<link rel="stylesheet" type="text/css" href="AccueilPartenaire.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
+    
+</head>
+<body style="overflow-y: auto;">
+    <!--header-->
+       
+    <header id="header">
+        <a href="AccueilPartenaire.html" class="logo"> <span>E</span>ventima</a>
+        <ul>
+            <li><a href="AccueilPartenaire.html" class="active" >Mon Profile</a></li>
+            <li><a href="Articles.php?idPart=<?php echo $idPart; ?>">Mes Articles</a></li>
+            <li><a href="demande.php">Les Demandes</a></li>
+            <li><a href="Offre.php">Mes Offres</a></li>
+            <li><a href="logout.php">Déconnecter</a></li>
+            <li><a href="a propos de ns.html"><i class="fa-solid fa-question"></i></a></li>
+            
+        </ul>
+     </header>
+     <div>
+      <div class="e">
+        <img class="container" src="images/S1.jpg" alt="Photo de profil">
+     </div>
+
+   
+                <div>
+                <h1 class="h">Stand ‘All</h1><br>
+                
+                <a href="ModifierProfile.php"><button class="buton"><i class="fa-solid fa-pen"></i> Modifier Profile</button></a>
+                <a href="add.php"><button class="button" ><i class="fa-solid fa-circle-plus"></i>Ajouter Article</button></a>
+               </div>
+              
+             <br><br><HR></HR><br><br>
+             <h2 class="h3">Photos</h2><br>
+             <div class="slider-container">
+               <div class="menu">
+                  <label for="slide-dot-1"></label>
+                  <label for="slide-dot-2"></label>
+                  <label for="slide-dot-3"></label>
+               </div>
+  
+               <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+               <img class="slide-img" src="images/S3.jpg">
+  
+               <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+               <img class="slide-img" src="images/photographe.jpg">
+  
+               <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+               <img class="slide-img" src="images/traiteur.webp">
+  
+               </div><br><br>
+            
+
+           
+             <h2 class="h2">Mes service</h2><br>
+             <table class="tab">
+                
+                <tbody>
+                  <tr class="tr">
+                    <td class="td"><i class="fa-solid fa-user-group" style="color: #1abef4;"></i> 680 Personnes </td>
+                    <td class="td"><i class="fa-solid fa-utensils" style="color: #1abef4;"></i> Traiteur disponible </td>
+                
+                  </tr>
+                  <tr class="tr">
+                    <td class="td"><i class="fa-regular fa-lights-holiday" style="color: #07e5e9;"></i></i> DJ non disponible </td>
+                    <td class="td"> <i class="fa-solid fa-cars" style="color: #1abef4;"></i>125 Places </td>
+                    
+                  </tr>
+                  <tr class="tr">
+                    <td class="td">Consommation </td>
+                    <td class="td">Promotion en janvier et février</td>
+                    
+                  </tr>
+                </tbody>
+              </table>
+              <br><br><br>
+              <h2 class="h3">Offres</h2><br><br>
+              
+                <div>
+                  <table>
+                    <tr>
+                      <td><img class="off" src="images/traiteur.webp"></td>
+                      <td class="tdd"><h1>Traiteur Ahmed</h1><br><h2 class="hh">2100 DA</h2><h3 class="nn"><s>2500 DA</s><br><br></h3><h2>29-05-2023</h2></h2> </td>
+                      <td><button class="my-button">Supprimer</button><br><br><br>
+                      <a href="ModifierOffre.html"><button class="my-button">Modifier</button></td></a>
+                    </tr>
+                  </table>
+                  
+
+                </div>
+              <br>
+              <HR class="hr"></HR><br>
+              <div>
+                
+                <table>
+                  <tr>
+                    <td><img class="off" src="images/photographe.jpg"></td>
+                    <td class="tdd"><h1>photographe oussama</h1><br><h2 class="hh">1800 DA</h2><h3 class="nn"><s>2200 DA</s><br><br></h3><h2>10-05-2023</h2></h2> </td>
+                    <td><button class="my-buton">Supprimer</button><br><br><br>
+                    <a href="ModifierOffre.html"><button class="my-buton">Modifier</button></td></a>
+                  </tr>
+                </table>
+                
+              </div>
+              </div>
+              
+              
+            
+       
+        
+    </div>
+    <!--footer-->
+    <footer>
+        <br> <br>
+        <div class="pied-logo">Eventima</div>
+        <div class="pied-de-page">
+            
+            <a href="FAQ.html"><div class="np">
+                <div class="tl">FAQ</div>
+            </div></a>
+            <a href="Condition Generale.html"><div class="np">
+                <div class="tl">Condition géneral</div>
+            </div></a>
+            <a href="Equipe.html"><div class="np">
+                <div class="tl">L'équipe</div>
+            </div></a>
+        
+            
+            <a href="contacter nous pied.html"><div class="np">
+                <div class="tl">Contact</div>
+            </div></a>
+
+            
+        </div>
+        <div class="reseau">
+            <h3>
+                <a href="https://www.facebook.com/"><i1 class="fa-brands fa-square-facebook"></i1></a>
+                <a href="https://www.twitter.com/"><i1 class="fa-brands fa-square-twitter"></i1></a>
+                <a href="https://www.instagram.com/"><i1 class="fa-brands fa-instagram"></i1></a>
+            </h3>
+           
+        </div>
+        
+    </footer>
+<!--fin footer-->
+    
+
+</body>
+</html>
+

@@ -1,0 +1,86 @@
+body {
+    font-family: Arial;
+    background-color: rgb(255, 255, 255);   
+}
+
+.CG{
+
+    font-size: 30px;
+    font-family: Arial;
+    color: rgb(243, 81, 81);
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.intro{
+    font-size: 25px;
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+    text-decoration: underline dotted;
+    text-align: left
+    
+}
+
+.introo{
+    font-size: 20px;
+    color: rgb(48, 48, 48);
+
+}
+.inscription{
+    font-size: 25px;
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+    text-decoration: underline dotted;
+    text-align: left
+}
+.paiement {
+    font-size: 25px;
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+    text-decoration: underline dotted;
+    text-align: left
+}
+.regle {
+    font-size: 25px;
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+    text-decoration: underline dotted;
+    text-align: left
+}
+.utilisation{
+    font-size: 25px;
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+    text-decoration: underline dotted;
+    text-align: left
+}
+.confidentialite{
+    font-size: 25px;
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+    text-decoration: underline dotted;
+    text-align: left
+}
+
+.inscriptionn{
+    font-size: 20px;
+    color: rgb(48, 48, 48);
+}
+.paiementt{
+    font-size: 20px;
+    color: rgb(48, 48, 48);
+}
+.reglee{
+    font-size: 20px;
+    color: rgb(48, 48, 48);
+}
+.utilisationn{
+    font-size: 20px;
+    color: rgb(48, 48, 48);
+}
+.confidentialitee{
+    font-size: 20px;
+    color: rgb(48, 48, 48);
+}
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>minlength="8" required
+<html>
+<head>
+  <meta charset="UTF-8">
+	<title>Connexion</title>
+	<link rel="stylesheet" type="text/css" href="connecter.css">
+    <link rel="stylesheet" type="text/css" href="AccueilVisite.css">
+</head>
+<body>
+	
+    
+        <img src="top.png" >
+    
+    <div id="login-box">
+        <h1 class="inscription"> <b>Heureux de vous revoir</b>  </h1> 
+        <div class="text2">
+            Vous n’avez pas de compte ?   
+        </div>
+        <a href="eventima3.html"><div class="text3">
+            Inscrivez-vous   
+        </div></a>
+
+        <div class="left">
+            
+          <form id="loginForm">
+          
+          <input type="email" id="email" placeholder="Email" required>
+          <input type="password" id="password" placeholder="Mot de passe" >
+     
+          <a href="motDePasse.html" class="mdp" ><u>Mot de passe oublier</u></a> <br><br>
+      
+          <input type="checkbox" > <label for="sevenir"> se souvenir moi</label>
+
+          
+          
+          <input type="submit" name="signup_submit"  value="Connecter" />
+        
+          </form>
+        </div>
+        
+        <div class="right">
+          
+          
+          <button class="social-signin facebook">Facebook</button>
+          <button class="social-signin twitter">Twitter</button>
+          <button class="social-signin google">Google+</button>
+        </div>
+        <div class="or">OU</div>
+      </div>
+     
+      
+  <script src="script.js">
+
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Empêche l'envoi du formulaire
+    
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+
+      function isValidEmail(email) {
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+    
+    
+      if (email === "" || password === "") {
+        alert("Veuillez remplir tous les champs.");
+        return;
+      }
+    
+      if (!isValidEmail(email)) {
+        alert("Veuillez entrer une adresse email valide.");
+        return;
+      }
+
+    
+      // Ici, vous pouvez effectuer d'autres vérifications ou envoyer le formulaire
+    
+      alert("Connexion réussie !");
+    });
+    
+    
+    
+      </script>
+   
+
+
+      
+</body>
+</html>

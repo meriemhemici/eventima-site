@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page de Paiement</title>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 250px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+</style>
+</head>
+<body>
+  <h1>Page de Paiement</h1>
+  
+  <form id="payment-form">
+    <div>
+      <label for="card-number">Numéro de carte:</label>
+      <input type="text" id="card-number" name="card-number" maxlength="16" required>
+    </div>
+    
+    <div>
+      <label for="card-name">Nom sur la carte:</label>
+      <input type="text" id="card-name" name="card-name" required>
+    </div>
+    
+    <div>
+      <label for="expiry-date">Date d'expiration:</label>
+      <input type="text" id="expiry-date" name="expiry-date" maxlength="5" placeholder="MM/AA" required>
+    </div>
+    
+    <div>
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" name="cvv" maxlength="3" required>
+    </div>
+    
+    <button type="submit">Payer</button>
+  </form>
+  
+  <script src="script.js">
+    document.getElementById("payment-form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Empêche la soumission du formulaire
+  
+  // Récupérer les valeurs des champs
+  var cardNumber = document.getElementById("card-number").value;
+  var cardName = document.getElementById("card-name").value;
+  var expiryDate = document.getElementById("expiry-date").value;
+  var cvv = document.getElementById("cvv").value;
+  
+  // Effectuer des opérations de validation ou de traitement des données de paiement ici
+  
+  // Exemple de vérification simple
+  if (cardNumber && cardName && expiryDate && cvv) {
+    alert("Paiement réussi!");
+    // Rediriger l'utilisateur vers une page de confirmation ou effectuer d'autres actions nécessaires
+  } else {
+    alert("Veuillez remplir tous les champs.");
+  }
+});
+
+  </script>
+</body>
+</html>
+
+
+
