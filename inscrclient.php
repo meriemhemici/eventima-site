@@ -5,7 +5,7 @@
 <html>
 <head>
 	<title>Formulaire d'inscription</title>
-	<link rel="stylesheet" type="text/css" href="mstyle.css">
+	<link rel="stylesheet" type="text/css" href="insr.css">
   <meta charset="UTF-8">
 </head>
 <body style="overflow-y: auto; margin: auto;">
