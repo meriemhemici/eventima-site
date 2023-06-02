@@ -19,11 +19,29 @@ include('connect.php');
             border-radius: 4px;
             font-size: 16px;
             cursor: pointer;
-            margin-left: 400px;
+            margin-left: 350px;
             width: 140px;
             height: 37px;
             font-size: 20px;
+            margin-top: 20px;
         }
+        .button1{
+    background-color: #2285be;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 240px;
+    height: 55px;
+    cursor: pointer;
+    margin-left: 1200px;
+    font-size: 25px;
+  }
+
+  .button1:hover {
+    background-color: #9baec2;
+  }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
@@ -41,7 +59,7 @@ include('connect.php');
         </ul>
     </header>
     <div class="aj">
-        <a href="add.php"><button class="button"></i>Ajouter Article</button></a>
+        <a href="add.php"><button class="button1"></i>Ajouter Article</button></a>
     </div> <br>
     <hr></hr>
     <!--main-->
@@ -86,7 +104,7 @@ include('connect.php');
             echo "</form>";
             echo "</td>";
             echo "<td>";
-            echo "<a href='detailles.html'><button class='my-button' type='submit'> Read more</button></a>";
+            echo "<a href='detailles.html'><button class='my-button' type='submit'> Voir plus</button></a>";
             echo "</td>";
             echo "</tr>";
             echo "</table>";
