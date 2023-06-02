@@ -4,7 +4,7 @@ include('connect.php');?>
 <html>
 <head>
 	<title>Formulaire d'inscription</title>
-	<link rel="stylesheet" type="text/css" href="mstyle.css">
+	<link rel="stylesheet" type="text/css" href="insr.css">
 </head>
 <body style="overflow-y: auto;">
 	
