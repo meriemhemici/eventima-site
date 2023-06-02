@@ -25,14 +25,7 @@ include("connect.php");
         </ul>
      </header>
      <table>
-        <tr>
-          <th>Nom</th>
-          <th>Date</th>
-          <th>Heure de début</th>
-          <th>Heure de fin</th>
-          <th>Nombre de personnes</th>
-          <th>Action</th>
-        </tr>
+       
         <?php foreach ($reservations as $reservation) { ?>
         <tr>
           <td><?php echo $reservation['nom']; ?></td>
