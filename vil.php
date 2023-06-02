@@ -68,7 +68,7 @@
                 <li><a href="a propos de ns.html">A propos nous</a></li>
                 <li><a href="contacter nous pied.html">Contactez-nous</a></li>
                 <li><a href="FAQ.html"><i class="fa-solid fa-question"></i></a></li>
-                <li><a href="panier (2).html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="panier.php"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </header>
         <!--header-->
