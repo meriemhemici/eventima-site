@@ -42,9 +42,9 @@
             <a href="accueilclient.html" class="logo"> <span>E</span>ventima</a>
             <ul>
             <li><a href="AccueilC.php"  >Nos service</a></li>
-            <li><a href="offre.php">Offre</a></li>
+            <li><a href="offreC.php" class="active">Offre</a></li>
             <li><a href="fedelitee.html">Fidélité</a></li>
-            <li><a href="a propos de ns.html" class="active">A propos nous</a></li>
+            <li><a href="a propos de ns.html" >A propos nous</a></li>
             <li><a href="contacter nous pied.html">Contactez-nous</a></li>
             <li><a href="FAQ.html"><i class="fa-solid fa-question"></i></a></li>
             <li><a href="login.php"><i class="fa-solid fa-user"></i></a></li>
