@@ -1,7 +1,7 @@
 <html>
     <head>
         <title> Eventima</title>
-        <link rel="stylesheet" href="css/Reservation.css">
+        <link rel="stylesheet" href="reserv.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
     </head>
     <body>
@@ -11,13 +11,13 @@
 
             <a href="AccueilVisite.html" class="logo"> <span>E</span>ventima</a>
             <ul>
-                <li><a href="Nos-service.html"  >Nos service</a></li>
-                <li><a href="offreC.html" class="active">Offre</a></li>
+                <li><a href="Nos-service.html" class="active" >Nos service</a></li>
+                <li><a href="offreC.html" >Offre</a></li>
                 <li><a href="fedelitee.html" >Fidélité</a></li>
                 <li><a href="a propos de ns.html">A propos nous</a></li>
                 <li><a href="contacter nous pied.html">Contactez-nous</a></li>
                 <li><a href="FAQ.html"><i class="fa-solid fa-question"></i></a></li>
-                <li><a href="connecter.html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="panier.php"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </header>
 
@@ -25,7 +25,7 @@
 
 
         <div>
-            <h1 class="h1"><b>Réservations</b></h1>
+            <h1 class="h1t"><b>Réservations</b></h1>
             <?php
                 // Vérifier si des paramètres d'endroit ont été passés en paramètres GET
                 if (isset($_GET['endroit']) && isset($_GET['ville']) && isset($_GET['adresse'])) {
